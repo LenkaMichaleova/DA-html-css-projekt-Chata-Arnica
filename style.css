@@ -214,8 +214,6 @@ span {
   margin-right: 0.5rem;
 }
 
-/* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
-
 @media (min-width: 840px) {
   /* HLAVIČKA - NAVIGACE */
   .page-header {
@@ -244,12 +242,47 @@ span {
     font-size: 1.75rem;
   }
 
+  /* CENÍK */
+  .pricelist__content {
+    max-width: none;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .offer {
+    width: 220px;
+  }
+
   /* RECENZE */
+  .review__content {
+    border: none;
+  }
 
   .review__text {
     width: 250px;
     padding: 1.5rem;
+    background-color: var(--background-secondary);
+    position: relative;
+    left: 60px;
   }
 
-  /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+  .review__photo {
+    background-image: url("./images/reviewer.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+  }
+
+  /* KONTAKT */
+  .footer {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pricelist__content, .footer {
+    gap: 6rem;
+  }
 }
